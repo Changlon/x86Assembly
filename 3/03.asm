@@ -3,26 +3,16 @@
 ;计算1..100的累加
 ;栈的使用
 
-jmp start 
-
-stack:
-
-times 16 db 0 
-
-start: 
-
 mov ax,0xb800 
 mov es,ax 
-
-
-mov ax,0x7c0
-
-mov ss,ax 
-
-mov ax, start 
-mov sp,ax 
-
 mov di,0 
+
+xor cx,cx 
+mov ss,cx 
+mov sp,cx 
+
+
+
 
 
 xor ax,ax 
@@ -35,16 +25,27 @@ cmp cx,100
 jle lj 
 
 
+xor cx,cx  
+mov si,10 
+dp:  
+inc cx 
+xor dx,dx  
+div si 
+add dl,30h 
+push dx 
+cmp ax,0 
+jne dp 
 
-push  0x7c
-push  0x7d 
 
-pop  ax
-pop  ax 
+show:   
+pop dx 
+mov [es:di],dl  
+inc di 
+mov byte [es:di],0x07  
+inc di 
+loop show 
 
 jmp $ 
-
-
 
 times 510-($ - $$) db 0 
 
