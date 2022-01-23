@@ -11,10 +11,6 @@ xor cx,cx
 mov ss,cx 
 mov sp,cx 
 
-
-
-
-
 xor ax,ax 
 mov cx,1
 
