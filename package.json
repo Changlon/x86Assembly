@@ -1,0 +1,13 @@
+{
+  "name": "assembly_examples",
+  "version": "1.0.0",
+  "description": "记录学习 Assembly ",
+  "main": "index.js",
+  "repository": "git@github.com:Changlon/x86Assembly.git",
+  "author": "'Changlon' <'changlong.a2@gmail.com'> (https://github.com/Changlon/)",
+  "license": "MIT",
+  "private": false,
+  "scripts": { 
+      "compile":"node ./bin/cli.js"
+  }
+}
