@@ -7,7 +7,8 @@
   "author": "'Changlon' <'changlong.a2@gmail.com'> (https://github.com/Changlon/)",
   "license": "MIT",
   "private": false,
-  "scripts": { 
-      "compile":"node ./bin/cli.js"
-  }
+  "scripts": {
+    "compile": "node ./bin/cli.js"
+  },
+  "dependencies": {}
 }
