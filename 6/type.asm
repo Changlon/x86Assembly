@@ -38,7 +38,7 @@ SECTION code align=16 vstart=0
         mov ax,0xb800 
         mov es,ax  
         mov si,0 
-
+        
 keybord_listener:
         xor ax,ax 
         int 0x16 
@@ -149,12 +149,3 @@ SECTION stack align=16 vstart=0
 ;-------------------------------------------------------------------------------
 SECTION trail align=16 
 program_end: 
-
-
-
-
-
-
-
-
-
