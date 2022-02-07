@@ -22,7 +22,9 @@ xp /512xb 0x7c00 //查看内存 /字节数(x以16进制显示,b字节为单位 ,
 n  // 单步调试 
 u/16 反汇编16条指令
 info eflags //显示标志寄存器的信息 df小写 0 大写 1
-print-stack打印栈的地址
+print-stack //打印栈的地址
+creg //显示控制寄存器的内容 如 cr0 ->控制进入保护模式
+info gdt // 查看gdt表
 ```
 
 
