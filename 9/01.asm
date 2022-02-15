@@ -30,7 +30,7 @@
 
 ; 默认操作尺寸为16的前提下编译的机器指令
 
-; bits 32
+; bits 16
 ; mov al,dl    88D0
 ; mov ax,dx    89D0 
 ; mov eax,edx  6689D0  当 bits 32时指令为 89D0
