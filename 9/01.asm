@@ -25,6 +25,24 @@
 
 
 
+;练习
+
+; mov al,dl    88D0
+; mov ax,dx    89D0 
+; mov eax,edx  6689D0 
+
+; mov [bx+di],dh  8831
+; mov [bx+ di],si 8931
+; mov [bx+di],esi 668931
+; mov [ecx],esi   66678931  
+; mov [ecx],si    678931 
+
+;movsb  A4
+;movsw  A5
+;movsd  66A5
+
+
+
 
 
 
